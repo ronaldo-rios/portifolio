@@ -169,27 +169,52 @@ button:hover {
     font-weight: 600;
 }
 
-.journey__cards {
+.journey__timeline {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
+    gap: 2rem;
     padding: 2rem;
+    position: relative;
 }
 
-.journey__cards div {
+.journey__timeline::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, #fd1d75, #2ebbee);
+    transition: 0.4s ease;
+}
+
+.journey__item {
+    position: relative;
+    padding-left: 3rem;
+}
+
+.journey__item::before {
+    content: "";
+    position: absolute;
+    left: 12px;
+    top: 10px;
+    width: 14px;
+    height: 14px;
+    background: #fd1d75;
+    border: 0.1rem solid white;
+    border-radius: 50%;
+    transition: 0.4s ease;
+}
+
+.journey__timeline div {
     padding: 1rem;
     text-align: center;
 }
 
-.journey__cards h4 {
+.journey__timeline h4 {
     margin: 0 0 8px;
     font-size: 1.7rem;
     color: #a9e4ee;
-}
-
-.journey__cards img {
-    width: 8rem;
-    height: auto;
 }
 
 .cards-container p {
@@ -444,7 +469,7 @@ footer {
         font-size: 1.5rem;
     }
 
-    .journey__cards {
+    .journey__timeline {
         grid-template-columns: repeat(1, 1fr);
     }
 
