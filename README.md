@@ -1,2 +1,2 @@
-# jupitercode
-Jupiter Code business landing page
+# Ronaldo Rios
+ROnaldo Rios Business landing page
