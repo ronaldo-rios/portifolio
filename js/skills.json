@@ -1,0 +1,36 @@
+[
+  {
+    "category": "Front-End",
+    "color": "#172845",
+    "skills": [
+        "HTML", "CSS", "JavaScript", 
+        "Typescript", "React", "Next", 
+        "Tailwind", "ShadcnUI", "Figma"
+    ]
+  },
+  {
+    "category": "Back-End",
+    "color": "#172845",
+    "skills": [
+        "PHP", "Python", "Node.js", "Laravel", 
+        "Symfony", "Express", "Nest JS", 
+        "Slim Framework", "Prisma", "Doctrine", 
+        "Eloquent", "Testes Automatizados"
+    ]
+  },
+  {
+    "category": "Banco de Dados",
+    "color": "#172845",
+    "skills": ["MySQL", "PostgreSQL", "MongoDB", "Redis"]
+  },
+  {
+    "category": "DevOps",
+    "color": "#172845",
+    "skills": ["Docker", "Linux", "Git", "CI/CD", "AWS EC2", "AWS S3"]
+  },
+  {
+    "category": "Arquitetura & Boas Práticas",
+    "color": "#172845",
+    "skills": ["SOLID", "MVC", "Clean Arch", "Microservices", "Design Patterns", "TDD", "Ports and Adapters"]
+  }
+]

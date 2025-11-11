@@ -1,4 +1,3 @@
-// Open and close the toggle menu:
 let show = true
 const menu = document.querySelector('.menu')
 const btnToggle = menu.querySelector('.toggle')
@@ -9,7 +8,6 @@ btnToggle.addEventListener('click', () => {
     show = !show
 })
 
-// Scroll to section with smooth behavior:
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault()

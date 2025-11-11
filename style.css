@@ -132,10 +132,18 @@ button:hover {
 .about {
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
     align-items: center;
     padding: 2rem 5rem;
     background: linear-gradient(to right, #3ecdef, #2fa4d6, #1283f5);
     color: #000;
+}
+
+.about__content {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .about__text {
@@ -151,6 +159,45 @@ button:hover {
     width: 30%;
     height: auto;
     padding: 0 2.5rem;
+}
+
+/** Card */
+.skills__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.skill__card {
+    padding: 20px;
+    border-radius: 12px;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.skill__card:hover {
+    transform: translateY(-5px);
+}
+
+.skill__card h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.skill__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/* Cada skill */
+.skill__item {
+    background: rgba(255, 255, 255, 0.25);
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 0.9rem;
 }
 
 .journey__container {
@@ -411,7 +458,7 @@ footer {
 
 /* Media Queries */
 @media (max-width: 1175px) {
-    .about {
+    .about__content {
         flex-direction: column;
     }
 
@@ -578,5 +625,9 @@ footer {
 
     .hero__content h1 {
         font-size: 3rem;
+    }
+
+    .hero__buttons {
+        display: none;
     }
 }
